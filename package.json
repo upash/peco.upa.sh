@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "peco-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs"
+  },
+  "devDependencies": {
+    "vuepress": "^0.13.1"
+  }
+}

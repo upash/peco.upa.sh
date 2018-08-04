@@ -2,6 +2,10 @@ module.exports = {
   title: 'Peco',
   description: 'A future-ready static site generator for Vue',
   themeConfig: {
+    repo: 'uchudenpa/peco',
+    docsRepo: 'uchudenpa/peco.upa.sh',
+    docsDir: 'docs',
+    editLinks: true,
     sidebar: [
       {
         title: 'Getting Started',

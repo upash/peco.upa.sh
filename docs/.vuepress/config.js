@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/permalinks',
-          '/guide/themes'
+          '/guide/using-themes',
+          '/guide/creating-a-theme'
         ]
       }
     ],

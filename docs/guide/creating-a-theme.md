@@ -1,17 +1,6 @@
-# Themes
+# Creating A Theme
 
-To use a custom theme rather than Peco's default theme, just configure it in your config file like this:
-
-📝 __peco.config.js__:
-
-```js
-module.exports = {
-  // Path to your theme
-  theme: './theme'
-  // Or using an npm package: `peco-theme-tom`
-  theme: 'tom'
-}
-```
+## Using Default Layout Manager
 
 A basic but complete theme looks like:
 
@@ -37,7 +26,7 @@ Different kinds of pages will use different layout component, here's the complet
 |(categories page)|category|index|
 |(tags page)|tag|index|
 
-## Layout Component Props
+### Layout Component Props
 
 Layout components all have a `page` prop:
 
@@ -58,7 +47,7 @@ interface Page {
 }
 ```
 
-`page.body` is the raw HTML of compiled Markdown, to get the Vue component version of it you can use `<slot name="body"></slot>` in the layout component.
+`page.body` is the raw HTML of compiled Markdown. To render the markdown content as Vue component in your website, you should use the default slot `<slot name="default"></slot>` instead.
 
 For `index` `category` `tag` layouts, the `page` prop has extra keys:
 
@@ -75,6 +64,12 @@ interface IndexPage extends Page {
   }
 }
 ```
+
+## Using Custom Layout Manager
+
+Instead of following the folder structure of Peco's default layout manager, you can use your own one by populating a `layout.js` or `layout.vue` at the root path of your theme.
+
+It's just a Vue component which also has a `page` prop, so it's all up to you to decide how to manage the layout depending on what `page.attributes.layout` is.
 
 ## Preprocessors
 

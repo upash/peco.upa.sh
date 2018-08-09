@@ -15,7 +15,7 @@ In this documentation we will use JavaScript to write the config file, the essen
 ```js
 module.exports = {
   title: 'My Website',
-  deescription: 'Describe your website'
+  description: 'Describe your website'
 }
 ```
 

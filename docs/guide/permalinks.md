@@ -9,7 +9,7 @@ The default permalink for pages is `/:slug`, and for posts it's `/:year/:month/:
 You can configure it in config file, it will apply globally for every page:
 
 ```js
-// peco.config.js
+// .peco/config.js
 module.exports = {
   permalink: {
     post: '/:year/:month/:day/:slug',

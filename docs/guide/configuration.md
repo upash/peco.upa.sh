@@ -2,11 +2,11 @@
 
 ## Config File
 
-Config file is used to customize your website, Peco will automatically use one of following files:
+Config file is used to customize your website, Peco will automatically use one of following files from `.peco` folder inside your project:
 
-- __peco.config.js__: JavaScript
-- __peco.config.yml__: YAML
-- __peco.config.toml__: TOML
+- __config.js__: JavaScript
+- __config.yml__: YAML
+- __config.toml__: TOML
 
 It's all up to you to choose the syntax to write the config file.
 

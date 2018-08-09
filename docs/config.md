@@ -170,7 +170,7 @@ Theme-specific configurations.
 
 Use a custom npm package for slugify headers, e.g. use [limax](https://github.com/lovell/limax) for CJK support:
 
-📝 __peco.config.yml__:
+📝 __config.yml__:
 
 ```yaml
 markdown:
@@ -179,7 +179,7 @@ markdown:
 
 You can also directory require a package when using JS config file:
 
-📝 __peco.config.js__:
+📝 __config.js__:
 
 ```js
 module.exports = {

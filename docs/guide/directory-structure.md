@@ -7,7 +7,8 @@ A basic Peco website usually looks like:
 ```bash
 .
 ├── package.json
-├── peco.config.js
+├── .peco
+│   └── config.js
 ├── .gitignore
 └── source
     ├── _posts
@@ -20,7 +21,7 @@ An overview of what each of these does:
 |File / Directory|Description|
 |---|---|
 |package.json|Define npm scripts and dependencies|
-|peco.config.js|Customize the website|
+|.peco/config.js|Site configuration|
 |source|Where to store markdown files|
 |source/_posts|For special markdown files, i.e. posts|
 

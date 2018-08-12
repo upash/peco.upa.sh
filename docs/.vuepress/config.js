@@ -1,11 +1,18 @@
 module.exports = {
   title: 'Peco',
   description: 'A future-ready static site generator for Vue',
+  serviceWorker: true,
   themeConfig: {
     repo: 'uchudenpa/peco',
     docsRepo: 'uchudenpa/peco.upa.sh',
     docsDir: 'docs',
     editLinks: true,
+    serviceWorker: {
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
+    },
     sidebar: [
       {
         title: 'Getting Started',
